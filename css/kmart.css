@@ -554,7 +554,6 @@ body {
 
 /* line 308, ../scss/kmart.scss */
 .feature-sec-two {
-  padding: 60px 0;
   background: #78BC35;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(top, #78BC35, #26881B);
@@ -565,10 +564,123 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom, #78BC35, #26881B);
   /* Standard syntax */ }
-  /* line 311, ../scss/kmart.scss */
-  .feature-sec-two h2 {
+  /* line 310, ../scss/kmart.scss */
+  .feature-sec-two .sec-two-container {
+    padding: 60px 0;
+    background: url(../img/feature-bg.png) bottom center no-repeat;
+    background-size: 100%; }
+    /* line 314, ../scss/kmart.scss */
+    .feature-sec-two .sec-two-container h2 {
+      width: 100%;
+      font-size: 48px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      margin: 0; }
+    /* line 322, ../scss/kmart.scss */
+    .feature-sec-two .sec-two-container .col-left {
+      width: 33.3%;
+      float: left;
+      text-align: right;
+      margin-top: 100px; }
+      /* line 328, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .col-left .sec-feature-box .box-title {
+        line-height: 1em;
+        margin-left: 30%; }
+      /* line 329, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .col-left .sec-feature-box .box-content {
+        margin-left: 30%; }
+    /* line 332, ../scss/kmart.scss */
+    .feature-sec-two .sec-two-container .col-med {
+      width: 33.3%;
+      float: left; }
+      /* line 335, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .col-med .i-phone-layout {
+        padding: 0 8%; }
+        /* line 337, ../scss/kmart.scss */
+        .feature-sec-two .sec-two-container .col-med .i-phone-layout img {
+          width: 100%; }
+    /* line 342, ../scss/kmart.scss */
+    .feature-sec-two .sec-two-container .col-right {
+      text-align: left;
+      width: 33.3%;
+      float: left;
+      margin-top: 100px; }
+      /* line 348, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .col-right .sec-feature-box .box-title {
+        line-height: 1em;
+        margin-right: 30%; }
+      /* line 349, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .col-right .sec-feature-box .box-content {
+        margin-right: 30%; }
+    /* line 352, ../scss/kmart.scss */
+    .feature-sec-two .sec-two-container .sec-feature-box {
+      margin-bottom: 80px; }
+      /* line 354, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .sec-feature-box .box-title {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 10px; }
+      /* line 361, ../scss/kmart.scss */
+      .feature-sec-two .sec-two-container .sec-feature-box .box-content {
+        font-size: 16px;
+        font-weight: 300;
+        color: #eaffad; }
+
+/* line 371, ../scss/kmart.scss */
+.testimony-sec {
+  background: url(../img/review-bg.png) center bottom no-repeat;
+  background-size: 100%;
+  padding: 40px 0;
+  text-align: center; }
+  /* line 376, ../scss/kmart.scss */
+  .testimony-sec h2 {
     font-size: 48px;
     font-weight: 400;
-    color: #fff;
-    text-align: center;
-    margin-top: 0; }
+    margin: 20px 0 0 0; }
+  /* line 381, ../scss/kmart.scss */
+  .testimony-sec .container-review {
+    margin: 100px 60px; }
+    /* line 383, ../scss/kmart.scss */
+    .testimony-sec .container-review .review-card {
+      width: 25%;
+      margin: 2%;
+      min-height: 200px;
+      display: inline-grid;
+      padding: 20px 20px 30px 20px;
+      margin-bottom: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      text-align: left;
+      box-shadow: 10px 22px 50px rgba(0, 0, 0, 0.16); }
+      /* line 394, ../scss/kmart.scss */
+      .testimony-sec .container-review .review-card .profile-pic {
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        margin-top: -55px;
+        margin-bottom: 10px;
+        box-shadow: 2px 3px 11px rgba(0, 0, 0, 0.16);
+        background: #fff; }
+        /* line 402, ../scss/kmart.scss */
+        .testimony-sec .container-review .review-card .profile-pic img {
+          width: 100%; }
+      /* line 406, ../scss/kmart.scss */
+      .testimony-sec .container-review .review-card .name-email {
+        font-size: 18px;
+        color: #222;
+        min-height: 60px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 30px; }
+        /* line 413, ../scss/kmart.scss */
+        .testimony-sec .container-review .review-card .name-email span {
+          color: #999;
+          text-transform: lowercase;
+          font-weight: 400; }
+      /* line 419, ../scss/kmart.scss */
+      .testimony-sec .container-review .review-card .review-content {
+        min-height: 90px;
+        color: #999999; }
