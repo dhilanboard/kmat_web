@@ -25,14 +25,16 @@ body {
 	position: fixed;
     right: 20px;
     top: 20px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 100%;
 	.menu-items {		
 		display: none;
 		position: absolute;
 		right: 33px;
 		top: 0px;
 		border-radius: 100px 0 0 100px;
-		width: 720px;
-		padding: 25px 20px 22px;
+		width: 680px;
+		padding: 19px 0px 18px;
 		text-transform: uppercase;
 		z-index: -9;
 		@include background-gradient (#78BC35,#26881B);
@@ -48,7 +50,7 @@ body {
 					font-size: 18px;
 					line-height: 1.2em;
 					font-weight: 600;
-					margin: 0 50px 0 40px;
+					margin: 0 40px;
 					&:hover {
 						color: #000;
 					}
@@ -57,13 +59,13 @@ body {
 		}
 	}
 	.menu-container {
-		padding: 24px 17px 44px;
+		padding: 21px 14px 37px;
 	    border-radius: 100px;
 		@include background-gradient (#78BC35,#26881B);
 		z-index: 99999;
 		#menu-icon {
-			width: 34px;
-			height: 24px;
+			width: 30px;
+			height: 34px;
 			float: right;
 			position: relative;
 			-webkit-transform: rotate(0deg);
@@ -78,7 +80,7 @@ body {
 			span {
 				display: block;
 				position: absolute;
-				height: 4px;
+				height: 2px;
 				width: 100%;
 				background: #fff;
 				opacity: 1;
@@ -95,19 +97,19 @@ body {
 					top: 0px;
 				}
 				&:nth-child(2), &:nth-child(3) {
-					top: 10px;
+					top: 8px;
 					width: 70%;
 				}
 
 				&:nth-child(4) {
-					top: 20px;
+					top: 16px;
 					width: 80%;
 				}
 			}
 			&.open {
 				span {
 					&:nth-child(1) {
-						top: 10px;
+						top: 8px;
 						width: 0%;
 						left: 50%;
 					}
@@ -126,7 +128,7 @@ body {
 						transform: rotate(-45deg);
 					}
 					&:nth-child(4) {
-						top: 10px;
+						top: 8px;
 						width: 0%;
 						left: 50%;
 					}
@@ -142,24 +144,24 @@ body {
 .header {
 	background: url(../img/bg-banner.png) bottom center no-repeat;
 	background-position-y: -50px; 
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	background-size: 100%;
 }
 .brand {
-	width: 75px;
+	width: 50px;
 	margin: 15px 0 0 20px;
 }
 
 .page-title {
 	text-align: center;
-	margin: 30px 0 0 0;
+	margin: 10px 0 0 0;
 	.title {
-		font-size: 60px;
+		font-size: 46px;
 		line-height: 1em;
 		font-weight: 300;
 	}
 	.sub-title {
-		font-size: 80px;
+		font-size: 60px;
 		line-height: 1em;
 		color: #78BC35;
 		font-weight: 900;
@@ -168,7 +170,7 @@ body {
 
 .download-header {
 	text-align: center;
-	margin: 60px 0 160px;
+	margin: 40px 0 100px;
 	ul {
 		list-style-type: none;
 		margin: 0; padding: 0;
@@ -176,7 +178,7 @@ body {
 			display: inline;
 			a {
 				display: inline-block;
-				width: 250px;
+				width: 170px;
 				margin: 0 10px;
 				img {
 					max-width: 100%;
@@ -187,13 +189,13 @@ body {
 }
 
 .phone-layout {
-	width: 490px;
+	width: 420px;
 	margin: 0 auto;
 	padding: 10px;
 	.phone-container {
-		padding: 157px 60px 160px;
+		padding: 123px 68px 160px;
 		.slider-window {
-			height: 620px;
+			height: 476px;
 			overflow-y: scroll;	
 			border: 1px solid #666;
 			img {
@@ -201,6 +203,7 @@ body {
 			}
 		}
 		background: url(../img/phone-mock.png) top center no-repeat;
+		background-size: 100%;
 	}
 }
 
@@ -208,9 +211,9 @@ body {
 
 .feature-sec-one {
 	text-align: center;
-	padding: 60px 0 150px 0;
+	padding: 0 0 60px 0;
 	h2 {
-		font-size: 60px;
+		font-size: 48px;
 		font-weight: 400;
 	}
 	.left-content {
@@ -220,9 +223,9 @@ body {
 			margin: auto 0 auto auto;
 			.phone-container {
 				background-size: 100%;
-				padding: 144px 79px 180px;
+				padding: 122px 68px 180px;
 				.slider-window {
-					height: 554px;
+					height: 477px;
 					overflow: hidden;
 					img {
 						
@@ -241,14 +244,14 @@ body {
 				list-style-type: none;
 				padding: 0; margin: 0;
 				li {
-					box-shadow: 0 13px 36px #D4D4D4;
-					margin-bottom: 30px;
+					box-shadow: 0 12px 30px #D9D9D9;
+					margin-bottom: 25px;
 					.feature-title-header {
 						a {
 							display: block;
 							text-align: left;
-							font-size: 22px;
-							padding: 36px;
+							font-size: 18px;
+							padding: 26px;
 							font-weight: 600;
 							color: #666;
 							text-decoration: none;
@@ -265,9 +268,9 @@ body {
 							&:after {
 								position: absolute;
 								content: "+";
-								right: 36px;
-								top: 28px;
-								font-size: 34px;
+								right: 25px;
+								top: 21px;
+								font-size: 26px;
 								font-weight: 600;
 								color: #ccc;
 							}
@@ -277,15 +280,15 @@ body {
 							@include background-gradient (#78BC35,#26881B);
 							&:after {
 								content: "_";
-								top: 13px;
+								top: 11px;
 								font-weight: 900;
 								color: #fff;
 							}
 						}
 					}
 					.feature-content {
-						padding: 0 36px 30px 36px;
-						font-size: 24px;
+						padding: 0 26px 15px 26px;
+						font-size: 16px;
 						font-weight: 300;
 						text-align: left;
 						@include background-gradient (#78BC35,#26881B);
@@ -305,10 +308,11 @@ body {
 	padding: 60px 0;
 	@include background-gradient-vertical (#78BC35,#26881B);
 	h2 {
-		font-size: 60px;
+		font-size: 48px;
 		font-weight: 400;
 		color: #fff;
 		text-align: center;
+		margin-top: 0;
 	}
 	.col-left {
 		
