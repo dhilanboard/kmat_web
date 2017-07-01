@@ -1,0 +1,15 @@
+@mixin background-gradient($left, $right) {
+	background: $left; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, $left , $right); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, $left, $right); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, $left, $right); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, $left , $right); /* Standard syntax */
+}
+
+@mixin background-gradient-vertical($left, $right) {
+	background: $left; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(top, $left , $right); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, $left, $right); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, $left, $right); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, $left , $right); /* Standard syntax */
+}

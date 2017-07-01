@@ -1,2 +1,330 @@
 @import "base/normalize";
+@import "base/mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+
+body { 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 16px;
+	background-color: #f8f8f8;
+}
+
+.clearfix:before{content:"";display:table;}
+.clearfix:after{content:"";display:table;clear:both;}
+
+/* 
+* Custom SCSS
+*/
+
+
+/*
+* Menu
+*/
+.menu {
+    display: inline-block;
+	position: fixed;
+    right: 20px;
+    top: 20px;
+	.menu-items {		
+		display: none;
+		position: absolute;
+		right: 33px;
+		top: 0px;
+		border-radius: 100px 0 0 100px;
+		width: 720px;
+		padding: 25px 20px 22px;
+		text-transform: uppercase;
+		z-index: -9;
+		@include background-gradient (#78BC35,#26881B);
+		ul {
+			display: inline-block;
+			padding: 0; margin: 0;
+			li {
+				display: inline-block;
+				a {
+					display: inline-block;
+					text-decoration: none;
+					color: #fff;
+					font-size: 18px;
+					line-height: 1.2em;
+					font-weight: 600;
+					margin: 0 50px 0 40px;
+					&:hover {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+	.menu-container {
+		padding: 24px 17px 44px;
+	    border-radius: 100px;
+		@include background-gradient (#78BC35,#26881B);
+		z-index: 99999;
+		#menu-icon {
+			width: 34px;
+			height: 24px;
+			float: right;
+			position: relative;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;
+			cursor: pointer;
+			span {
+				display: block;
+				position: absolute;
+				height: 4px;
+				width: 100%;
+				background: #fff;
+				opacity: 1;
+				left: 0;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-transition: .25s ease-in-out;
+				-moz-transition: .25s ease-in-out;
+				-o-transition: .25s ease-in-out;
+				transition: .25s ease-in-out;
+				&:nth-child(1) {
+					top: 0px;
+				}
+				&:nth-child(2), &:nth-child(3) {
+					top: 10px;
+					width: 70%;
+				}
+
+				&:nth-child(4) {
+					top: 20px;
+					width: 80%;
+				}
+			}
+			&.open {
+				span {
+					&:nth-child(1) {
+						top: 10px;
+						width: 0%;
+						left: 50%;
+					}
+					&:nth-child(2) {
+						width: 100%;
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+					&:nth-child(3) {
+						width: 100%;				
+						-webkit-transform: rotate(-45deg);
+						-moz-transform: rotate(-45deg);
+						-o-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+					}
+					&:nth-child(4) {
+						top: 10px;
+						width: 0%;
+						left: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+* Brand
+*/
+.header {
+	background: url(../img/bg-banner.png) bottom center no-repeat;
+	background-position-y: -50px; 
+	padding-bottom: 100px;
+	background-size: 100%;
+}
+.brand {
+	width: 75px;
+	margin: 15px 0 0 20px;
+}
+
+.page-title {
+	text-align: center;
+	margin: 30px 0 0 0;
+	.title {
+		font-size: 60px;
+		line-height: 1em;
+		font-weight: 300;
+	}
+	.sub-title {
+		font-size: 80px;
+		line-height: 1em;
+		color: #78BC35;
+		font-weight: 900;
+	}
+}
+
+.download-header {
+	text-align: center;
+	margin: 60px 0 160px;
+	ul {
+		list-style-type: none;
+		margin: 0; padding: 0;
+		li {
+			display: inline;
+			a {
+				display: inline-block;
+				width: 250px;
+				margin: 0 10px;
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.phone-layout {
+	width: 490px;
+	margin: 0 auto;
+	padding: 10px;
+	.phone-container {
+		padding: 157px 60px 160px;
+		.slider-window {
+			height: 620px;
+			overflow-y: scroll;	
+			border: 1px solid #666;
+			img {
+				width: 100%;
+			}
+		}
+		background: url(../img/phone-mock.png) top center no-repeat;
+	}
+}
+
+
+
+.feature-sec-one {
+	text-align: center;
+	padding: 60px 0 150px 0;
+	h2 {
+		font-size: 60px;
+		font-weight: 400;
+	}
+	.left-content {
+		width: 40%;
+		float: left;
+		.phone-layout {
+			margin: auto 0 auto auto;
+			.phone-container {
+				background-size: 100%;
+				padding: 144px 79px 180px;
+				.slider-window {
+					height: 554px;
+					overflow: hidden;
+					img {
+						
+					}
+				}
+			}
+		}
+	}
+	.right-content {
+		width: 60%;
+		float: right;
+		padding: 100px 0 0 0;
+		.feature-list {
+			padding: 40px 200px 40px 40px;
+			ul {
+				list-style-type: none;
+				padding: 0; margin: 0;
+				li {
+					box-shadow: 0 13px 36px #D4D4D4;
+					margin-bottom: 30px;
+					.feature-title-header {
+						a {
+							display: block;
+							text-align: left;
+							font-size: 22px;
+							padding: 36px;
+							font-weight: 600;
+							color: #666;
+							text-decoration: none;
+							position: relative;
+							border-top: 1px solid #E5E5E5;
+							border-left: 1px solid #E5E5E5;
+							border-right: 1px solid #E5E5E5;
+							&:focus {
+								outline: none;
+							}
+							&:active {
+								@include background-gradient (#78BC35,#26881B);
+							}
+							&:after {
+								position: absolute;
+								content: "+";
+								right: 36px;
+								top: 28px;
+								font-size: 34px;
+								font-weight: 600;
+								color: #ccc;
+							}
+						}
+						&.open a {
+							color: #fff;
+							@include background-gradient (#78BC35,#26881B);
+							&:after {
+								content: "_";
+								top: 13px;
+								font-weight: 900;
+								color: #fff;
+							}
+						}
+					}
+					.feature-content {
+						padding: 0 36px 30px 36px;
+						font-size: 24px;
+						font-weight: 300;
+						text-align: left;
+						@include background-gradient (#78BC35,#26881B);
+						color: #fff;
+						border-bottom: 1px solid #E5E5E5;
+						border-left: 1px solid #E5E5E5;
+						border-right: 1px solid #E5E5E5;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.feature-sec-two {
+	padding: 60px 0;
+	@include background-gradient-vertical (#78BC35,#26881B);
+	h2 {
+		font-size: 60px;
+		font-weight: 400;
+		color: #fff;
+		text-align: center;
+	}
+	.col-left {
+		
+	}
+	.col-med {
+		
+	}
+	.col-right {
+		
+	}
+}
+
+
+
+
+
+
+
 
