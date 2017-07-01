@@ -441,40 +441,41 @@ body {
   /* line 215, ../scss/kmart.scss */
   .feature-sec-one h2 {
     font-size: 48px;
-    font-weight: 400; }
-  /* line 219, ../scss/kmart.scss */
+    font-weight: 400;
+    margin: 20px 0 0 0; }
+  /* line 220, ../scss/kmart.scss */
   .feature-sec-one .left-content {
     width: 40%;
     float: left; }
-    /* line 222, ../scss/kmart.scss */
+    /* line 223, ../scss/kmart.scss */
     .feature-sec-one .left-content .phone-layout {
       margin: auto 0 auto auto; }
-      /* line 224, ../scss/kmart.scss */
+      /* line 225, ../scss/kmart.scss */
       .feature-sec-one .left-content .phone-layout .phone-container {
         background-size: 100%;
         padding: 122px 68px 180px; }
-        /* line 227, ../scss/kmart.scss */
+        /* line 228, ../scss/kmart.scss */
         .feature-sec-one .left-content .phone-layout .phone-container .slider-window {
           height: 477px;
           overflow: hidden; }
-  /* line 237, ../scss/kmart.scss */
+  /* line 238, ../scss/kmart.scss */
   .feature-sec-one .right-content {
     width: 60%;
     float: right;
     padding: 100px 0 0 0; }
-    /* line 241, ../scss/kmart.scss */
+    /* line 242, ../scss/kmart.scss */
     .feature-sec-one .right-content .feature-list {
       padding: 40px 200px 40px 40px; }
-      /* line 243, ../scss/kmart.scss */
+      /* line 244, ../scss/kmart.scss */
       .feature-sec-one .right-content .feature-list ul {
         list-style-type: none;
         padding: 0;
         margin: 0; }
-        /* line 246, ../scss/kmart.scss */
+        /* line 247, ../scss/kmart.scss */
         .feature-sec-one .right-content .feature-list ul li {
           box-shadow: 0 12px 30px #D9D9D9;
-          margin-bottom: 25px; }
-          /* line 250, ../scss/kmart.scss */
+          margin-bottom: 30px; }
+          /* line 251, ../scss/kmart.scss */
           .feature-sec-one .right-content .feature-list ul li .feature-title-header a {
             display: block;
             text-align: left;
@@ -487,10 +488,10 @@ body {
             border-top: 1px solid #E5E5E5;
             border-left: 1px solid #E5E5E5;
             border-right: 1px solid #E5E5E5; }
-            /* line 262, ../scss/kmart.scss */
+            /* line 263, ../scss/kmart.scss */
             .feature-sec-one .right-content .feature-list ul li .feature-title-header a:focus {
               outline: none; }
-            /* line 265, ../scss/kmart.scss */
+            /* line 266, ../scss/kmart.scss */
             .feature-sec-one .right-content .feature-list ul li .feature-title-header a:active {
               background: #78BC35;
               /* For browsers that do not support gradients */
@@ -502,7 +503,7 @@ body {
               /* For Firefox 3.6 to 15 */
               background: linear-gradient(to right, #78BC35, #26881B);
               /* Standard syntax */ }
-            /* line 268, ../scss/kmart.scss */
+            /* line 269, ../scss/kmart.scss */
             .feature-sec-one .right-content .feature-list ul li .feature-title-header a:after {
               position: absolute;
               content: "+";
@@ -511,7 +512,7 @@ body {
               font-size: 26px;
               font-weight: 600;
               color: #ccc; }
-          /* line 278, ../scss/kmart.scss */
+          /* line 279, ../scss/kmart.scss */
           .feature-sec-one .right-content .feature-list ul li .feature-title-header.open a {
             color: #fff;
             background: #78BC35;
@@ -524,13 +525,13 @@ body {
             /* For Firefox 3.6 to 15 */
             background: linear-gradient(to right, #78BC35, #26881B);
             /* Standard syntax */ }
-            /* line 281, ../scss/kmart.scss */
+            /* line 282, ../scss/kmart.scss */
             .feature-sec-one .right-content .feature-list ul li .feature-title-header.open a:after {
               content: "_";
               top: 11px;
               font-weight: 900;
               color: #fff; }
-          /* line 289, ../scss/kmart.scss */
+          /* line 290, ../scss/kmart.scss */
           .feature-sec-one .right-content .feature-list ul li .feature-content {
             padding: 0 26px 15px 26px;
             font-size: 16px;
@@ -551,7 +552,7 @@ body {
             border-left: 1px solid #E5E5E5;
             border-right: 1px solid #E5E5E5; }
 
-/* line 307, ../scss/kmart.scss */
+/* line 308, ../scss/kmart.scss */
 .feature-sec-two {
   padding: 60px 0;
   background: #78BC35;
@@ -564,7 +565,7 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom, #78BC35, #26881B);
   /* Standard syntax */ }
-  /* line 310, ../scss/kmart.scss */
+  /* line 311, ../scss/kmart.scss */
   .feature-sec-two h2 {
     font-size: 48px;
     font-weight: 400;

@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="css/kmart.css">
 </head>
 <body>
-	<header class="header clearfix">
+	<header class="header clearfix" id="home">
 		<div class="brand">
 			<img src="./img/logo.svg" alt="">
 		</div>
-
+		
 		<div class="menu">
 			<div class="menu-items">
 				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">FEATURES</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#section1">FEATURES</a></li>
 					<li><a href="#">DOWNLOAD</a></li>
 					<li><a href="#">CONTACT US</a></li>
 				</ul>
@@ -37,8 +37,8 @@
 		
 		<div class="download-header">
 			<ul>
-				<li><a href="https://play.google.com/store/apps/details?id=com.ionicframework.kmart866556" target="_blank"><img src="./img/google-play-badge.png" alt=""></a></li>
-				<li><a href="https://itunes.apple.com/sb/app/kmart-india/id1241286485?mt=8" target="_blank"><img src="./img/app-store-badge.png" alt=""></a></li>
+				<li id="android"><a href="https://play.google.com/store/apps/details?id=com.ionicframework.kmart866556" target="_blank"><img src="./img/google-play-badge.png" alt=""></a></li>
+				<li id="ios"><a href="https://itunes.apple.com/sb/app/kmart-india/id1241286485?mt=8" target="_blank"><img src="./img/app-store-badge.png" alt=""></a></li>
 			</ul>
 		</div>
 		
@@ -51,7 +51,7 @@
 		</div>
 	</header>	
 	
-	<section class="feature-sec-one clearfix">
+	<section class="feature-sec-one clearfix" id="section1">
 		<h2>We Are Helping You With</h2>
 		<div class="left-content">
 			<div class="phone-layout">
@@ -113,5 +113,18 @@
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/jquery.collapse.js"></script>
 	<script src="./js/kmart.js"></script>
+	<script>
+		var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+		var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+		if (isiDevice)
+		{
+			$('#android').hide();
+		}
+		if (isAndroid)
+		{
+			$('#ios').hide();
+		}
+	</script>
 </body>
 </html>
