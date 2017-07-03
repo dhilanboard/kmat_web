@@ -753,175 +753,247 @@ body {
   .contact-us-sec h2 {
     font-size: 48px;
     font-weight: 400;
-    margin: 20px 0 0 0; }
+    margin: 30px 0 60px 0; }
+  /* line 487, ../scss/kmart.scss */
+  .contact-us-sec .contact-content {
+    margin-bottom: 60px; }
+    /* line 489, ../scss/kmart.scss */
+    .contact-us-sec .contact-content .email, .contact-us-sec .contact-content .phone {
+      margin-bottom: 10px; }
+      /* line 491, ../scss/kmart.scss */
+      .contact-us-sec .contact-content .email span, .contact-us-sec .contact-content .phone span {
+        display: inline-block;
+        font-size: 30px;
+        line-height: 1.5em;
+        color: #126EC8; }
+        /* line 496, ../scss/kmart.scss */
+        .contact-us-sec .contact-content .email span img, .contact-us-sec .contact-content .phone span img {
+          opacity: 0.5;
+          width: 35px;
+          height: auto;
+          margin-bottom: -10px;
+          margin-right: 10px; }
+    /* line 506, ../scss/kmart.scss */
+    .contact-us-sec .contact-content .phone span {
+      color: #383838; }
 
-/* line 492, ../scss/kmart.scss */
+/* line 513, ../scss/kmart.scss */
 .footer {
   padding: 20px 60px;
   background-color: #111D10;
-  color: #f5f5f5; }
-  /* line 497, ../scss/kmart.scss */
+  color: #999; }
+  /* line 518, ../scss/kmart.scss */
   .footer .container-footer .credit-sec {
     float: left;
     line-height: 1.9em; }
-  /* line 501, ../scss/kmart.scss */
+    /* line 521, ../scss/kmart.scss */
+    .footer .container-footer .credit-sec span {
+      color: #c1c1c1;
+      margin-right: 10px; }
+    /* line 525, ../scss/kmart.scss */
+    .footer .container-footer .credit-sec a {
+      text-decoration: none;
+      color: #999;
+      margin: 0 10px; }
+      /* line 529, ../scss/kmart.scss */
+      .footer .container-footer .credit-sec a:hover, .footer .container-footer .credit-sec a:focus, .footer .container-footer .credit-sec a.active {
+        text-decoration: underline; }
+  /* line 534, ../scss/kmart.scss */
   .footer .container-footer .social-sec {
     float: right;
     text-align: right; }
-    /* line 504, ../scss/kmart.scss */
+    /* line 537, ../scss/kmart.scss */
     .footer .container-footer .social-sec a {
       display: inline-block;
       width: 30px;
       height: auto;
       margin-left: 10px; }
-      /* line 509, ../scss/kmart.scss */
+      /* line 542, ../scss/kmart.scss */
       .footer .container-footer .social-sec a img {
         width: 100%; }
 
-@media only screen and (max-width: 720px) {
-  /* line 518, ../scss/kmart.scss */
+/* line 550, ../scss/kmart.scss */
+.terms-content {
+  width: 80%;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 920px) {
+  /* line 556, ../scss/kmart.scss */
   .header {
     height: 100%;
     background-position-y: bottom; }
 
-  /* line 522, ../scss/kmart.scss */
+  /* line 560, ../scss/kmart.scss */
   .phone-layout {
     display: none; }
 
-  /* line 525, ../scss/kmart.scss */
+  /* line 563, ../scss/kmart.scss */
   .menu .menu-items {
     width: 300px;
     right: -20px;
     top: -10px;
     border-radius: 10px 0 0 10px; }
-    /* line 530, ../scss/kmart.scss */
+    /* line 568, ../scss/kmart.scss */
     .menu .menu-items ul {
       display: block; }
-      /* line 532, ../scss/kmart.scss */
+      /* line 570, ../scss/kmart.scss */
       .menu .menu-items ul li {
         display: block; }
-        /* line 534, ../scss/kmart.scss */
+        /* line 572, ../scss/kmart.scss */
         .menu .menu-items ul li a {
           font-size: 22px;
           margin-bottom: 20px; }
 
-  /* line 542, ../scss/kmart.scss */
+  /* line 580, ../scss/kmart.scss */
   .page-title .title {
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 26px;
     font-weight: 400; }
-  /* line 548, ../scss/kmart.scss */
+  /* line 586, ../scss/kmart.scss */
   .page-title .sub-title {
     font-size: 40px; }
 
-  /* line 552, ../scss/kmart.scss */
+  /* line 590, ../scss/kmart.scss */
   .download-header {
-    margin: 20px 0 10px; }
-    /* line 554, ../scss/kmart.scss */
+    margin: 100px 0 10px; }
+    /* line 592, ../scss/kmart.scss */
     .download-header ul li a {
       display: block;
       width: 180px;
       margin: 0 auto 5px; }
 
-  /* line 561, ../scss/kmart.scss */
+  /* line 599, ../scss/kmart.scss */
   .feature-sec-one h2 {
     font-size: 26px;
     margin: 10px 0 0 0; }
-  /* line 565, ../scss/kmart.scss */
+  /* line 603, ../scss/kmart.scss */
   .feature-sec-one .left-content {
     display: none; }
-  /* line 568, ../scss/kmart.scss */
+  /* line 606, ../scss/kmart.scss */
   .feature-sec-one .right-content {
     text-align: center;
     float: none;
     width: 90%;
     margin: 0 auto;
     padding-top: 10px; }
-    /* line 574, ../scss/kmart.scss */
+    /* line 612, ../scss/kmart.scss */
     .feature-sec-one .right-content .feature-list {
       padding: 20px 0 20px; }
-      /* line 577, ../scss/kmart.scss */
+      /* line 615, ../scss/kmart.scss */
       .feature-sec-one .right-content .feature-list ul li {
         margin-bottom: 10px; }
-        /* line 580, ../scss/kmart.scss */
+        /* line 618, ../scss/kmart.scss */
         .feature-sec-one .right-content .feature-list ul li .feature-title-header a {
           font-size: 16px;
           padding: 20px 45px 20px 20px; }
-          /* line 583, ../scss/kmart.scss */
+          /* line 621, ../scss/kmart.scss */
           .feature-sec-one .right-content .feature-list ul li .feature-title-header a:after {
             right: 15px;
             top: 12px; }
-        /* line 590, ../scss/kmart.scss */
+        /* line 628, ../scss/kmart.scss */
         .feature-sec-one .right-content .feature-list ul li .feature-title-header.open a:after {
           top: 1px; }
 
-  /* line 603, ../scss/kmart.scss */
+  /* line 641, ../scss/kmart.scss */
   .feature-sec-two .sec-two-container {
     padding: 30px 0; }
-    /* line 605, ../scss/kmart.scss */
+    /* line 643, ../scss/kmart.scss */
     .feature-sec-two .sec-two-container h2 {
       margin-bottom: 20px;
       font-size: 26px; }
-    /* line 609, ../scss/kmart.scss */
+    /* line 647, ../scss/kmart.scss */
     .feature-sec-two .sec-two-container .col-med {
       display: none; }
-    /* line 612, ../scss/kmart.scss */
+    /* line 650, ../scss/kmart.scss */
     .feature-sec-two .sec-two-container .col-left, .feature-sec-two .sec-two-container .col-right {
       width: 100%;
       float: none;
       text-align: center;
       margin: 0 0 20px 0; }
-      /* line 617, ../scss/kmart.scss */
+      /* line 655, ../scss/kmart.scss */
       .feature-sec-two .sec-two-container .col-left .sec-feature-box, .feature-sec-two .sec-two-container .col-right .sec-feature-box {
         margin: 0 2%; }
-        /* line 619, ../scss/kmart.scss */
+        /* line 657, ../scss/kmart.scss */
         .feature-sec-two .sec-two-container .col-left .sec-feature-box .box-title, .feature-sec-two .sec-two-container .col-right .sec-feature-box .box-title {
           margin: 0 0 10px 0;
           font-size: 16px; }
-        /* line 623, ../scss/kmart.scss */
+        /* line 661, ../scss/kmart.scss */
         .feature-sec-two .sec-two-container .col-left .sec-feature-box .box-content, .feature-sec-two .sec-two-container .col-right .sec-feature-box .box-content {
           margin: 0 0 30px 0; }
 
-  /* line 632, ../scss/kmart.scss */
+  /* line 670, ../scss/kmart.scss */
   .testimony-sec {
     padding: 0; }
-    /* line 634, ../scss/kmart.scss */
+    /* line 672, ../scss/kmart.scss */
     .testimony-sec h2 {
       margin-bottom: 20px;
       font-size: 26px; }
-    /* line 638, ../scss/kmart.scss */
+    /* line 676, ../scss/kmart.scss */
     .testimony-sec .container-review {
       margin: 50px 10px; }
-      /* line 640, ../scss/kmart.scss */
+      /* line 678, ../scss/kmart.scss */
       .testimony-sec .container-review .review-card {
         width: 80%;
         margin-bottom: 50px; }
 
-  /* line 648, ../scss/kmart.scss */
+  /* line 686, ../scss/kmart.scss */
   .download-sec .container-down-sec {
     padding: 20px 10px; }
-    /* line 650, ../scss/kmart.scss */
+    /* line 688, ../scss/kmart.scss */
     .download-sec .container-down-sec .content-down {
       float: none;
       width: 100%; }
-      /* line 651, ../scss/kmart.scss */
+      /* line 689, ../scss/kmart.scss */
       .download-sec .container-down-sec .content-down h2 {
         font-size: 26px;
         text-align: center; }
-      /* line 657, ../scss/kmart.scss */
+      /* line 695, ../scss/kmart.scss */
       .download-sec .container-down-sec .content-down .downlaod-btn {
         margin-top: 80px; }
-        /* line 659, ../scss/kmart.scss */
+        /* line 697, ../scss/kmart.scss */
         .download-sec .container-down-sec .content-down .downlaod-btn a {
           display: block;
-          width: 90%;
+          width: 250px;
           margin: 0 auto; }
-    /* line 667, ../scss/kmart.scss */
+    /* line 705, ../scss/kmart.scss */
     .download-sec .container-down-sec .content-mobile {
       display: none; }
 
-  /* line 674, ../scss/kmart.scss */
+  /* line 712, ../scss/kmart.scss */
   .contact-us-sec h2 {
     font-size: 26px;
-    margin-top: 0; } }
+    margin-top: 0; }
+  /* line 718, ../scss/kmart.scss */
+  .contact-us-sec .contact-content .email span, .contact-us-sec .contact-content .phone span {
+    font-size: 20px; }
+    /* line 720, ../scss/kmart.scss */
+    .contact-us-sec .contact-content .email span img, .contact-us-sec .contact-content .phone span img {
+      width: 30px; }
+
+  /* line 727, ../scss/kmart.scss */
+  .footer {
+    padding: 20px 15px; }
+    /* line 730, ../scss/kmart.scss */
+    .footer .container-footer .credit-sec, .footer .container-footer .social-sec {
+      float: none;
+      width: 100%;
+      margin-bottom: 26px;
+      text-align: center; }
+    /* line 737, ../scss/kmart.scss */
+    .footer .container-footer .credit-sec span {
+      display: block; }
+    /* line 740, ../scss/kmart.scss */
+    .footer .container-footer .credit-sec i {
+      display: none; }
+    /* line 745, ../scss/kmart.scss */
+    .footer .container-footer .social-sec a {
+      width: 50px; } }
+@media only screen and (min-width: 920px) and (max-width: 1280px) {
+  /* line 754, ../scss/kmart.scss */
+  .header {
+    background-position-y: 15%; }
+
+  /* line 757, ../scss/kmart.scss */
+  .feature-sec-one .right-content .feature-list {
+    padding-right: 80px; } }

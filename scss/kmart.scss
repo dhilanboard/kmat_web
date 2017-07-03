@@ -482,21 +482,54 @@ body {
 	h2 {
 		font-size: 48px;
 		font-weight: 400;
-		margin: 20px 0 0 0;
+		margin: 30px 0 60px 0;
 	}
-	.contact.content {
-		
+	.contact-content {
+		margin-bottom: 60px;
+		.email, .phone{
+			margin-bottom: 10px;
+			span {
+				display: inline-block;
+				font-size: 30px;
+				line-height: 1.5em;
+				color: #126EC8;
+				img {
+					opacity: 0.5;
+					width: 35px;
+					height: auto;
+					margin-bottom: -10px;
+					margin-right: 10px;
+				}
+			}
+		}
+		.phone {
+			span {
+				color: #383838;	
+			}
+		}
 	}
 }
 
 .footer {
 	padding: 20px 60px;
 	background-color: #111D10;
-	color: #f5f5f5;
+	color: #999;
 	.container-footer {
 		.credit-sec {
 			float: left;
 			line-height: 1.9em;
+			span {
+				color: #c1c1c1;
+				margin-right: 10px;
+			}
+			a {
+				text-decoration: none;
+				color: #999;
+				margin: 0 10px;
+				&:hover, &:focus, &.active {
+					text-decoration: underline;
+				}
+			}
 		}
 		.social-sec {
 			float: right;
@@ -514,7 +547,12 @@ body {
 	}
 }
 
-@media only screen and (max-width: 720px) {
+.terms-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 920px) {
 	.header {
 		height: 100%;
 		background-position-y: bottom;
@@ -550,7 +588,7 @@ body {
 		}
 	}
 	.download-header {
-		margin: 20px 0 10px;
+		margin: 100px 0 10px;
 		ul li a {
 			display: block;
 			width: 180px;
@@ -658,7 +696,7 @@ body {
 					margin-top: 80px;
 					a {
 						display: block;
-						width: 90%;
+						width: 250px;
 						margin: 0 auto;
 					}
 				}
@@ -675,6 +713,48 @@ body {
 			font-size: 26px;
 			margin-top: 0;
 		}
+		.contact-content {
+			.email, .phone {
+				span {
+					font-size: 20px;
+					img {
+						width: 30px;
+					}
+				}
+			}
+		}
 	}
+	.footer {
+		padding: 20px 15px;
+		.container-footer {
+			.credit-sec, .social-sec {
+				float: none;
+				width: 100%;
+				margin-bottom: 26px;
+				text-align: center;
+			}
+			.credit-sec {
+				span {
+					display: block;
+				}
+				i {
+					display: none;
+				}
+			}
+			.social-sec {
+				a {
+					width: 50px;
+				}
+			}
+		}
+	}
+}
 
+@media only screen and (min-width: 920px) and (max-width: 1280px) {
+	.header {
+		background-position-y: 15%;
+	}
+	.feature-sec-one .right-content .feature-list {
+		padding-right: 80px;
+	}
 }

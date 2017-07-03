@@ -11,8 +11,8 @@ $(document).ready(function(){
 		$('html, body').animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top
 		}, 1000);
-	})
-						  
+	});
+	
 	new jQueryCollapse($(".feature-list ul li"), {
 		open: function() {
 		  this.slideDown(150);
@@ -23,7 +23,7 @@ $(document).ready(function(){
 		accordion: true
 	});
 	
-	if(window.innerWidth <= 760) {
+	if(window.innerWidth <= 920) {
 		var x = window.innerHeight;
 		$('.header').css('height',x + 'px');
 	}
