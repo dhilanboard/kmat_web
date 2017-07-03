@@ -16,8 +16,8 @@
 				<ul>
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#section1">FEATURES</a></li>
-					<li><a href="#">DOWNLOAD</a></li>
-					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#download-sec">DOWNLOAD</a></li>
+					<li><a href="#contact-us-sec">CONTACT US</a></li>
 				</ul>
 			</div>
 			<div class="menu-container">
@@ -183,22 +183,53 @@
 		</div>
 	</section>
 	
+	<section class="download-sec clearfix" id="download-sec">
+		<div class="container-down-sec clearfix">
+			<div class="content-down">
+				<h2>Download The App</h2>
+				
+				<div class="downlaod-btn">
+					<a href="https://play.google.com/store/apps/details?id=com.ionicframework.kmart866556" target="_blank"><img src="./img/google-play-badge.png" alt=""></a>
+					<a href="https://itunes.apple.com/sb/app/kmart-india/id1241286485?mt=8" target="_blank"><img src="./img/app-store-badge.png" alt=""></a>
+				</div>
+			</div>
+			<div class="content-mobile">
+				<div class="phone-layout">
+					<div class="phone-container">
+						<div class="slider-window">
+							<img src="./img/home-page.png" alt="">
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="contact-us-sec" id="contact-us-sec">
+		<h2>Contact Us</h2>
+		<div class="contact-content">
+			<div class="email"><span><img src="./img/close-envelope.svg" alt=""></span> <span>contact@kmartindia.com</span></div>
+			<div class="phone"><span><img src="./img/call-answer.svg" alt=""></span> <span>08861186093</span></div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="container-footer clearfix">
+			<div class="credit-sec">
+				<span>KMart | &copy; All Rights Reserved</span>
+			</div>
+			<div class="social-sec">
+				<a href="#"><img src="./img/g-plus.png" alt=""></a>
+				<a href="#"><img src="./img/facebook.png" alt=""></a>
+				<a href="#"><img src="./img/linkedin.png" alt=""></a>
+				<a href="#"><img src="./img/twitter.png" alt=""></a>
+			</div>
+		</div>
+	</footer>
+	
 	<script src="./js/jquery.js"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/jquery.collapse.js"></script>
 	<script src="./js/kmart.js"></script>
-	<script>
-		var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
-		var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
-
-		if (isiDevice)
-		{
-			$('#android').hide();
-		}
-		if (isAndroid)
-		{
-			$('#ios').hide();
-		}
-	</script>
 </body>
 </html>

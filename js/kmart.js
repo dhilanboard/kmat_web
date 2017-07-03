@@ -22,5 +22,10 @@ $(document).ready(function(){
 		},
 		accordion: true
 	});
+	
+	if(window.innerWidth <= 760) {
+		var x = window.innerHeight;
+		$('.header').css('height',x + 'px');
+	}
 	 	
 });
