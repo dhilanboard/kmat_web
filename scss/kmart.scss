@@ -197,7 +197,7 @@ body {
 		padding: 123px 68px 160px;
 		.slider-window {
 			height: 476px;
-			overflow-y: scroll;	
+			overflow: hidden;	
 			border: 1px solid #666;
 			img {
 				width: 100%;
@@ -212,7 +212,7 @@ body {
 
 .feature-sec-one {
 	text-align: center;
-	padding: 0 0 60px 0;
+	padding: 60px 0 60px 0;
 	h2 {
 		font-size: 48px;
 		font-weight: 400;
@@ -608,6 +608,7 @@ body {
 		}
 	}
 	.feature-sec-one {
+		padding-top: 0;
 		h2 {
 		font-size: 26px;
 		margin: 10px 0 0 0;			
