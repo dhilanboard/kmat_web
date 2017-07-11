@@ -247,7 +247,7 @@ body {
     right: 33px;
     top: 0px;
     border-radius: 100px 0 0 100px;
-    width: 680px;
+    width: 700px;
     padding: 19px 0px 18px;
     text-transform: uppercase;
     z-index: -9;
@@ -644,13 +644,13 @@ body {
     margin: 20px 0 0 0; }
   /* line 383, ../scss/kmart.scss */
   .testimony-sec .container-review {
-    margin: 100px 60px; }
+    margin: 100px 4%; }
     /* line 385, ../scss/kmart.scss */
     .testimony-sec .container-review .review-card {
-      width: 22%;
+      width: 24%;
       margin: 2%;
       min-height: 200px;
-      display: inline-grid;
+      float: left;
       padding: 20px 20px 30px 20px;
       margin-bottom: 40px;
       background-color: #fff;
